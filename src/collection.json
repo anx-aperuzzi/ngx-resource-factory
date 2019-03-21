@@ -1,0 +1,9 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "resource": {
+      "description": "Creates resource.",
+      "factory": "./ngx-resource-factory/resource/index#resource"
+    }
+  }
+}

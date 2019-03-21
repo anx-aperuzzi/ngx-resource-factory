@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "resource",
+    "title": "Creates a simple schematic.",
+    "type": "object",
+    "properties": {
+        "path": {
+            "type": "string",
+            "format": "path",
+            "description": "The path to create the simple schematic within.",
+            "visible": false
+        },
+        "name": {
+            "description": "Specifies the name of the generated Class.",
+            "type": "string",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
+        },
+        "dataAttr": {
+              "type": "string",
+              "description": "Data attribute for resource",
+              "default": "resource"
+          }
+    },
+    "required": [
+        "name"
+    ],
+    "additionalProperties": false
+}
